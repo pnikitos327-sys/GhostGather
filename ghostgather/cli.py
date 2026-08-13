@@ -78,7 +78,7 @@ def process_target(target):
         find_subdomains(target)
         print_info("DNS Bruteforce")
         dns_bruteforce_results = dns_bruteforce_run(target)
-        dns_bruteforce_output(dns_bruteforce_results, target)
+        dns_bruteforce_output(dns_bruteforce_results)
         print_info("HTTP Headers")
         headers_data = headers_run(target)
         headers_output(headers_data)
